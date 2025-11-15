@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Developer Portfolio</title>
+    <!--<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>-->
+    <script src="./components/AppIcon.js"></script>
+    <script src="./scripts/navAnimation.js"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/output.css"/>
+    <link rel="stylesheet" href="./assets/styles.css"/>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-300 antialiased">
+    <div class="relative flex min-h-screen w-full flex-col items-center justify-center p-4">
+      <!-- Header -->
+      <header class="fixed top-0 z-50 w-full flex justify-center items-center px-4 bg-primary/60 backdrop-blur-sm dark:bg-backgroundDark/80">
+        <nav class="flex justify-evenly w-full px-4">
+          <a href="#home" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Home</a>
+          <a href="#" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Skills</a>
+          <a href="#" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Formation</a>
+          <a href="#" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Projects</a>
+        </nav>
+      </header>
+      <main class="relative w-full mx-auto px-4 @container">
+        <!-- ProfileHeader -->  
+         <section id="home" class="scroll-m-20 min-h-screen content-center">
+          <div class="grid grid-cols-1 gap-6 sm:gap-2 sm:grid-cols-2 sm:px-12">
+            <!-- Avatar -->
+            <div class="order-1 sm:order-2 justify-self-center self-center bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 sm:h-64 border-4 border-white dark:border-gray-700 shadow-lg" data-alt="A professional headshot of a full-stack developer." style='background-image: url("./public/foto-perfil.png");'> 
+            </div>
+            <div class="order-2 sm:order-1 flex gap-8 flex-col items-center">
+              <div class="flex flex-col items-center justify-center text-center gap-2">
+                <!--Title-->
+                <h1 class="text-gray-900 dark:text-white text-3xl font-bold tracking-tight">Hi, I'm Iv&aacute;n San Mart&iacute;n Far&iacute;as</h1>
+                <p class="text-primary text-lg font-medium">Full-Stack Developer</p>
+                <!--Description-->
+                <p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-relaxed max-w-md">
+                  Passionate about building seamless, user-centric web applications with React and Node.js. I thrive on solving complex problems and turning ideas into beautiful, functional products.
+                </p>
+              </div>
+              <div class="flex w-full max-w-sm flex-col @[24rem]:flex-row gap-3">
+                <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-transform hover:scale-105 active:scale-95 flex-1">
+                  <span class="truncate">View My Work</span>
+                </button>
+                <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white text-base font-bold transition-transform hover:scale-105 active:scale-95 flex-1 ring-1 ring-inset ring-gray-300 dark:ring-gray-700">
+                  <span class="truncate">Download CV</span>
+                </button>
+              </div>
+              <div class="flex justify-center gap-8">
+                <!-- Github -->
+                <a class="flex flex-col items-center gap-2 group" href="https://github.com/ivanJoshua98" target="_blank" rel="noopener noreferrer" >
+                  <div class="flex rounded-full bg-gray-200 dark:bg-gray-800 p-3 group-hover:bg-primary/20 transition-colors">
+                    <svg-icon name="github" class="text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors" style="font-size: 24px;"></svg-icon>
+                  </div>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm font-medium">GitHub</p>
+                </a>
+                <!-- LinkedIn -->
+                <a class="flex flex-col items-center gap-2 group" href="https://www.linkedin.com/in/ivan-san-martin-farias/" target="_blank" rel="noopener noreferrer">
+                  <div class="flex rounded-full bg-gray-200 dark:bg-gray-800 p-3 group-hover:bg-primary/20 transition-colors">
+                    <svg-icon name="linkedin" class="text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors" style="font-size: 24px;"></svg-icon>
+                  </div>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm font-medium">LinkedIn</p>
+                </a>
+                <!-- Gmail -->
+                <a class="flex flex-col items-center gap-2 group" href="mailto:ivan.sanmartin98@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <div class="flex rounded-full bg-gray-200 dark:bg-gray-800 p-3 group-hover:bg-primary/20 transition-colors">
+                    <svg-icon name="gmail" class="text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors" style="font-size: 24px;"></svg-icon>
+                  </div>
+                  <p class="text-gray-600 dark:text-gray-400 text-sm font-medium">Gmail</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Projects -->
+        <section>
+          <!-- Headline -->
+          <h1 class="text-zinc-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">
+            Projects
+          </h1>
+          <!-- Project Card 1: E-commerce Platform -->
+          <div class="p-4 pt-2 @container">
+            <div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg bg-white dark:bg-[#1C2127]">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Screenshot of an e-commerce platform storefront showing product listings" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQARI2U_kyGXwmwp_OhVeJe-g3wpD_I7LU9BbqXra96ODPBuO4NA7-kG7_rWIZtRq6K_5JTU8mzh-H3H8ZSqWcMhdn0IDzgy7NJXtE9Kg71JvZygZW2czkASI-GHlARlPw8NavcgFZWQvnwjdQ_GFTesCZJKGbsb-pAZEvzfWqcqENEUdTXnoMUmnkoJa0TbSbFAuvy1zu5KfLmqR088cerp110XDAiB4123CNXM0eAVQAmYiLGufSnw2OmVeOYpPVu9sDSXV5S7E");'>
+              </div>
+              <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4">
+                <p class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">E-commerce Platform</p>
+                <p class="text-zinc-600 dark:text-[#9dabb9] text-base font-normal leading-normal pt-1 pb-3">A full-featured e-commerce platform with a robust cart, secure checkout, and a comprehensive admin panel for inventory management.</p>
+                <!-- Chips -->
+                <div class="flex gap-2 p-0 flex-wrap pb-3">
+                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
+                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">React</p>
+                  </div>
+                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
+                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">Node.js</p>
+                  </div>
+                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
+                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">MongoDB</p>
+                  </div>
+                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
+                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">Stripe API</p>
+                  </div>
+                </div>
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-stretch gap-3 justify-start pt-2 border-t border-black/10 dark:border-white/10">
+                  <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] gap-2">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                    <span class="truncate">View Live Demo</span>
+                  </button>
+                  <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-transparent text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em]">
+                    <span class="material-symbols-outlined">code</span>
+                    <span class="truncate">Source Code</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 2: Data Dashboard -->
+          <div class="p-4 pt-2 @container">
+            <div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg bg-white dark:bg-[#1C2127]">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A gif of an interactive data visualization dashboard with various charts and graphs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAXytkuhhb8ICcolEoq4jKjd7YhTwoUk7j5MuZKb74g1h2jFbzHcWxHEtd-3sz8hDUXOg5I703mHBv4E2daGPX99JDLLGo9_vyjC6aXmxqcjcCrw1GxwjeXL-Mrwcs_7wgLWT9RlIUG0aAadpV1STx1pOjhNydyyVyy4LlcWwUjqQ93lvkUSZq2dL579vws5HFSngAnesgLI5jN94yxAF1DU96RhgjZBhTiiDcQiFDeIJG9a_csrMT7uNLu7ciaycR-q2GOZVI56ak");'>
+              </div>
+              <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4">
+                <p class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Data Visualization Dashboard</p>
+                <p class="text-zinc-600 dark:text-[#9dabb9] text-base font-normal leading-normal pt-1 pb-3">An interactive dashboard that provides key business insights by visualizing complex data sources in real-time.</p>
+                <!-- Chips -->
+                <div class="flex gap-2 p-0 flex-wrap pb-3">
+                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
+                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">D3.js</p>
+                  </div>
+                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
+                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">Python</p>
+                  </div>
+                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
+                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">Flask</p>
+                  </div>
+                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
+                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">PostgreSQL</p>
+                  </div>
+                </div>
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-stretch gap-3 justify-start pt-2 border-t border-black/10 dark:border-white/10">
+                  <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] gap-2">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                    <span class="truncate">View Live Demo</span>
+                  </button>
+                  <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-transparent text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em]">
+                    <span class="material-symbols-outlined">code</span>
+                    <span class="truncate">Source Code</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project Card 3: Task Manager -->
+          <div class="p-4 pt-2 @container">
+            <div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg bg-white dark:bg-[#1C2127]">
+              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A mockup of a mobile task manager app on a phone screen, showing a list of tasks" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_sWepdwODo1MEfBnDxZ4hyAh-VZTEEvGfkA_gARri0t_KOwqTH5rDVq_cAOpX5jrrOIXoPN5AsOlZi2OxXdWQSAflxfB8Zl0D0YpuOUpfkbZr_xn8UmJ1tXeFr2CS-luFzlUbIM96LJUp89jwq8sjOeFv83UvA90IZd_GhgxI2W18xwgBiUmEJeTXvHvqWYNY-j6qlVwmf47oOvhG9MN51Xz2oiQ1K5jjCp_iWqAIvCIuo11DGQRnySpTKGJ_b7dcZeKm1-EQFYo");'>
+              </div>
+              <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4">
+                <p class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Mobile Task Manager App</p>
+                <p class="text-zinc-600 dark:text-[#9dabb9] text-base font-normal leading-normal pt-1 pb-3">A cross-platform app for task management with user authentication, real-time data sync, and push notifications.</p>
+                <!-- Chips -->
+                <div class="flex gap-2 p-0 flex-wrap pb-3">
+                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
+                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">React Native</p>
+                  </div>
+                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
+                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">Firebase</p>
+                  </div>
+                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
+                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">TypeScript</p>
+                  </div>
+                </div>
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-stretch gap-3 justify-start pt-2 border-t border-black/10 dark:border-white/10">
+                  <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] gap-2">
+                    <span class="material-symbols-outlined">open_in_new</span>
+                    <span class="truncate">View Live Demo</span>
+                  </button>
+                  <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-transparent text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em]">
+                    <span class="material-symbols-outlined">code</span>
+                    <span class="truncate">Source Code</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
