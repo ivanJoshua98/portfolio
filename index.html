@@ -6,6 +6,7 @@
     <title>Developer Portfolio</title>
     <!--<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>-->
     <script src="./components/AppIcon.js"></script>
+    <script src="./components/ProjectCard.js"></script>
     <script src="./scripts/navAnimation.js"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -27,7 +28,7 @@
           <a href="#home" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Home</a>
           <a href="#" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Skills</a>
           <a href="#" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Formation</a>
-          <a href="#" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Projects</a>
+          <a href="#projects" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Projects</a>
         </nav>
       </header>
       <main class="relative w-full mx-auto px-4 @container">
@@ -82,119 +83,38 @@
           </div>
         </section>
         <!-- Projects -->
-        <section>
+        <section id="projects" class="scroll-m-20">
           <!-- Headline -->
           <h1 class="text-zinc-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">
             Projects
           </h1>
           <!-- Project Card 1: E-commerce Platform -->
-          <div class="p-4 pt-2 @container">
-            <div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg bg-white dark:bg-[#1C2127]">
-              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Screenshot of an e-commerce platform storefront showing product listings" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQARI2U_kyGXwmwp_OhVeJe-g3wpD_I7LU9BbqXra96ODPBuO4NA7-kG7_rWIZtRq6K_5JTU8mzh-H3H8ZSqWcMhdn0IDzgy7NJXtE9Kg71JvZygZW2czkASI-GHlARlPw8NavcgFZWQvnwjdQ_GFTesCZJKGbsb-pAZEvzfWqcqENEUdTXnoMUmnkoJa0TbSbFAuvy1zu5KfLmqR088cerp110XDAiB4123CNXM0eAVQAmYiLGufSnw2OmVeOYpPVu9sDSXV5S7E");'>
-              </div>
-              <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4">
-                <p class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">E-commerce Platform</p>
-                <p class="text-zinc-600 dark:text-[#9dabb9] text-base font-normal leading-normal pt-1 pb-3">A full-featured e-commerce platform with a robust cart, secure checkout, and a comprehensive admin panel for inventory management.</p>
-                <!-- Chips -->
-                <div class="flex gap-2 p-0 flex-wrap pb-3">
-                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
-                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">React</p>
-                  </div>
-                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
-                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">Node.js</p>
-                  </div>
-                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
-                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">MongoDB</p>
-                  </div>
-                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
-                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">Stripe API</p>
-                  </div>
-                </div>
-                <!-- Action Buttons -->
-                <div class="flex flex-col sm:flex-row items-stretch gap-3 justify-start pt-2 border-t border-black/10 dark:border-white/10">
-                  <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] gap-2">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                    <span class="truncate">View Live Demo</span>
-                  </button>
-                  <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-transparent text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em]">
-                    <span class="material-symbols-outlined">code</span>
-                    <span class="truncate">Source Code</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <project-card 
+            image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuAQARI2U_kyGXwmwp_OhVeJe-g3wpD_I7LU9BbqXra96ODPBuO4NA7-kG7_rWIZtRq6K_5JTU8mzh-H3H8ZSqWcMhdn0IDzgy7NJXtE9Kg71JvZygZW2czkASI-GHlARlPw8NavcgFZWQvnwjdQ_GFTesCZJKGbsb-pAZEvzfWqcqENEUdTXnoMUmnkoJa0TbSbFAuvy1zu5KfLmqR088cerp110XDAiB4123CNXM0eAVQAmYiLGufSnw2OmVeOYpPVu9sDSXV5S7E"
+            data-alt="Screenshot of an e-commerce platform storefront showing product listings."
+            title="E-commerce Platform"
+            description="A full-featured e-commerce platform with a robust cart, secure checkout, and a comprehensive admin panel for inventory management."
+            technologies='["react", "nodejs"]'
+            code-url="#"
+          />
           <!-- Project Card 2: Data Dashboard -->
-          <div class="p-4 pt-2 @container">
-            <div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg bg-white dark:bg-[#1C2127]">
-              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A gif of an interactive data visualization dashboard with various charts and graphs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAXytkuhhb8ICcolEoq4jKjd7YhTwoUk7j5MuZKb74g1h2jFbzHcWxHEtd-3sz8hDUXOg5I703mHBv4E2daGPX99JDLLGo9_vyjC6aXmxqcjcCrw1GxwjeXL-Mrwcs_7wgLWT9RlIUG0aAadpV1STx1pOjhNydyyVyy4LlcWwUjqQ93lvkUSZq2dL579vws5HFSngAnesgLI5jN94yxAF1DU96RhgjZBhTiiDcQiFDeIJG9a_csrMT7uNLu7ciaycR-q2GOZVI56ak");'>
-              </div>
-              <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4">
-                <p class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Data Visualization Dashboard</p>
-                <p class="text-zinc-600 dark:text-[#9dabb9] text-base font-normal leading-normal pt-1 pb-3">An interactive dashboard that provides key business insights by visualizing complex data sources in real-time.</p>
-                <!-- Chips -->
-                <div class="flex gap-2 p-0 flex-wrap pb-3">
-                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
-                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">D3.js</p>
-                  </div>
-                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
-                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">Python</p>
-                  </div>
-                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
-                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">Flask</p>
-                  </div>
-                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
-                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">PostgreSQL</p>
-                  </div>
-                </div>
-                <!-- Action Buttons -->
-                <div class="flex flex-col sm:flex-row items-stretch gap-3 justify-start pt-2 border-t border-black/10 dark:border-white/10">
-                  <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] gap-2">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                    <span class="truncate">View Live Demo</span>
-                  </button>
-                  <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-transparent text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em]">
-                    <span class="material-symbols-outlined">code</span>
-                    <span class="truncate">Source Code</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <project-card 
+            image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuAXytkuhhb8ICcolEoq4jKjd7YhTwoUk7j5MuZKb74g1h2jFbzHcWxHEtd-3sz8hDUXOg5I703mHBv4E2daGPX99JDLLGo9_vyjC6aXmxqcjcCrw1GxwjeXL-Mrwcs_7wgLWT9RlIUG0aAadpV1STx1pOjhNydyyVyy4LlcWwUjqQ93lvkUSZq2dL579vws5HFSngAnesgLI5jN94yxAF1DU96RhgjZBhTiiDcQiFDeIJG9a_csrMT7uNLu7ciaycR-q2GOZVI56ak"
+            data-alt="A gif of an interactive data visualization dashboard with various charts and graphs."
+            title="Data Visualization Dashboard"
+            description="An interactive dashboard that provides key business insights by visualizing complex data sources in real-time."
+            technologies='["java","springboot", "swagger"]'
+            code-url="#"
+          />
           <!-- Project Card 3: Task Manager -->
-          <div class="p-4 pt-2 @container">
-            <div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg bg-white dark:bg-[#1C2127]">
-              <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="A mockup of a mobile task manager app on a phone screen, showing a list of tasks" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_sWepdwODo1MEfBnDxZ4hyAh-VZTEEvGfkA_gARri0t_KOwqTH5rDVq_cAOpX5jrrOIXoPN5AsOlZi2OxXdWQSAflxfB8Zl0D0YpuOUpfkbZr_xn8UmJ1tXeFr2CS-luFzlUbIM96LJUp89jwq8sjOeFv83UvA90IZd_GhgxI2W18xwgBiUmEJeTXvHvqWYNY-j6qlVwmf47oOvhG9MN51Xz2oiQ1K5jjCp_iWqAIvCIuo11DGQRnySpTKGJ_b7dcZeKm1-EQFYo");'>
-              </div>
-              <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4">
-                <p class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Mobile Task Manager App</p>
-                <p class="text-zinc-600 dark:text-[#9dabb9] text-base font-normal leading-normal pt-1 pb-3">A cross-platform app for task management with user authentication, real-time data sync, and push notifications.</p>
-                <!-- Chips -->
-                <div class="flex gap-2 p-0 flex-wrap pb-3">
-                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
-                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">React Native</p>
-                  </div>
-                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
-                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">Firebase</p>
-                  </div>
-                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
-                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">TypeScript</p>
-                  </div>
-                </div>
-                <!-- Action Buttons -->
-                <div class="flex flex-col sm:flex-row items-stretch gap-3 justify-start pt-2 border-t border-black/10 dark:border-white/10">
-                  <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] gap-2">
-                    <span class="material-symbols-outlined">open_in_new</span>
-                    <span class="truncate">View Live Demo</span>
-                  </button>
-                  <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-transparent text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em]">
-                    <span class="material-symbols-outlined">code</span>
-                    <span class="truncate">Source Code</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <project-card 
+            image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuB_sWepdwODo1MEfBnDxZ4hyAh-VZTEEvGfkA_gARri0t_KOwqTH5rDVq_cAOpX5jrrOIXoPN5AsOlZi2OxXdWQSAflxfB8Zl0D0YpuOUpfkbZr_xn8UmJ1tXeFr2CS-luFzlUbIM96LJUp89jwq8sjOeFv83UvA90IZd_GhgxI2W18xwgBiUmEJeTXvHvqWYNY-j6qlVwmf47oOvhG9MN51Xz2oiQ1K5jjCp_iWqAIvCIuo11DGQRnySpTKGJ_b7dcZeKm1-EQFYo"
+            data-alt="A mockup of a mobile task manager app on a phone screen, showing a list of tasks."
+            title="Mobile Task Manager App"
+            description="A cross-platform app for task management with user authentication, real-time data sync, and push notifications."
+            technologies='["html", "css", "tailwind"]'
+            code-url="#"
+          />
         </section>
       </main>
     </div>
