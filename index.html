@@ -4,9 +4,10 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Developer Portfolio</title>
-    <!--<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>-->
+    <script src="./scripts/data.js"></script>
     <script src="./components/AppIcon.js"></script>
     <script src="./components/ProjectCard.js"></script>
+    <script src="./components/TechItem.js"></script>
     <script src="./scripts/navAnimation.js"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -26,15 +27,15 @@
       <header class="fixed top-0 z-50 w-full flex justify-center items-center px-4 bg-primary/60 backdrop-blur-sm dark:bg-backgroundDark/80">
         <nav class="flex justify-evenly w-full px-4">
           <a href="#home" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Home</a>
-          <a href="#" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Skills</a>
-          <a href="#" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Formation</a>
           <a href="#projects" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Projects</a>
+          <a href="#tech-stack" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Tech Stack</a>
+          <a href="#" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Formation</a>
         </nav>
       </header>
       <main class="relative w-full mx-auto px-4 @container">
         <!-- ProfileHeader -->  
-         <section id="home" class="scroll-m-20 min-h-screen content-center">
-          <div class="grid grid-cols-1 gap-6 sm:gap-2 sm:grid-cols-2 sm:px-12">
+        <section id="home" class="scroll-m-20 min-h-screen content-center md:px-12">
+          <div class="grid grid-cols-1 gap-6 md:gap-2 md:grid-cols-2 md:px-12">
             <!-- Avatar -->
             <div class="order-1 sm:order-2 justify-self-center self-center bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 sm:h-64 border-4 border-white dark:border-gray-700 shadow-lg" data-alt="A professional headshot of a full-stack developer." style='background-image: url("./public/foto-perfil.png");'> 
             </div>
@@ -83,7 +84,7 @@
           </div>
         </section>
         <!-- Projects -->
-        <section id="projects" class="scroll-m-20">
+        <section id="projects" class="scroll-m-20 md:px-12 mb-12">
           <!-- Headline -->
           <h1 class="text-zinc-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">
             Projects
@@ -115,6 +116,76 @@
             technologies='["html", "css", "tailwind"]'
             code-url="#"
           />
+        </section>
+        <!-- Tech Stack -->
+        <section id="tech-stack" class="scroll-m-20 md:px-12 mt-12">
+          <!-- Headline -->
+          <header>
+            <h1 class="text-zinc-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">
+              Tech Stack
+            </h1>
+          </header>
+          <main class="px-4 py-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+            <!-- Languages Section -->
+            <section class="bg-white/5 dark:bg-white/5 rounded-xl p-4">
+              <h2 class="text-center text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-tight">
+                Languages & Systems
+              </h2>
+              <article class="py-4 space-y-2">
+                <!-- List items -->
+                <div class="min-h-[72px] grid grid-cols-3 gap-5 pt-4">
+                  <tech-item name="java" size="32"></tech-item>
+                  <tech-item name="nodejs" size="32"></tech-item>
+                  <tech-item name="javascript" size="32"></tech-item>
+                  <tech-item name="typescript" size="32"></tech-item>
+                  <tech-item name="html" size="32"></tech-item>
+                  <tech-item name="css" size="32"></tech-item>
+                  <tech-item name="postgres" size="32"></tech-item>
+                  <tech-item name="mysql" size="32"></tech-item>
+                  <tech-item name="haskell" size="32"></tech-item>
+                </div>
+              </article>
+            </section>
+            <!-- Frameworks Section -->
+            <section class="bg-white/5 dark:bg-white/5 rounded-xl p-4 mt-8 md:mt-0">
+              <h2 class="text-center text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-tight">
+                Frameworks & Libraries
+              </h2>
+              <article class="py-4 space-y-2">
+                <!-- List items -->
+                <div class="min-h-[72px] grid grid-cols-3 gap-5 pt-4">
+                  <tech-item name="tailwind" size="32"></tech-item>
+                  <tech-item name="react" size="32"></tech-item>
+                  <tech-item name="nextjs" size="32"></tech-item>
+                  <tech-item name="springboot" size="32"></tech-item>
+                  <tech-item name="expressjs" size="32"></tech-item>
+                  <tech-item name="googleappsscript" size="32"></tech-item>
+                  <tech-item name="mui" size="32"></tech-item>
+                </div>
+              </article>
+            </section>
+            <!-- DevOps Section -->
+            <section class="bg-white/5 dark:bg-white/5 rounded-xl p-4 mt-8 md:mt-0">
+              <h2 class="text-center text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-tight">
+                DevOps & Tools
+              </h2>
+              <article class="py-4 space-y-2">
+                <!-- List items -->
+                <div class="min-h-[72px] grid grid-cols-3 gap-5 pt-4">
+                  <tech-item name="git" size="32"></tech-item>
+                  <tech-item name="github" size="32"></tech-item>
+                  <tech-item name="githubactions" size="32"></tech-item>
+                  <tech-item name="swagger" size="32"></tech-item>
+                  <tech-item name="gradle" size="32"></tech-item>
+                  <tech-item name="maven" size="32"></tech-item>
+                  <tech-item name="npm" size="32"></tech-item>
+                  <tech-item name="pnpm" size="32"></tech-item>
+                  <tech-item name="docker" size="32"></tech-item>
+                  <tech-item name="jwt" size="32"></tech-item>
+                </div>
+              </article>
+            </section>
+          </main>
         </section>
       </main>
     </div>

@@ -1,21 +1,4 @@
-
-const techNames = {
-  github: 'GitHub',
-  linkedin: 'LinkedIn',
-  gmail: 'Gmail',
-  react: 'React',
-  javascript: 'JavaScript',
-  typescript: 'TypeScript',
-  nodejs: 'Node.js',
-  tailwind: 'Tailwind',
-  html: 'HTML',
-  css: 'CSS',
-  java: 'Java',
-  springboot: 'Spring Boot',
-  swagger: 'Swagger',
-  postgres: 'PostgreSQL',
-  mysql: 'MySQL',
-}
+//techNames defined in data.js
 
 class ProjectCard extends HTMLElement {
 
