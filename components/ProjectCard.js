@@ -30,13 +30,13 @@ class ProjectCard extends HTMLElement {
     const codeURL = this.getAttribute('code-url') || '#';
 
     this.innerHTML = `
-      <div class="p-4 pt-2 @container">
-        <div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg bg-white dark:bg-[#1C2127]">
+      <article class="h-full">
+        <div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg h-full bg-white dark:bg-[#1C2127]">
           <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="${dataAlt}" style='background-image: url("${imageURL}");'>
           </div>
-          <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 p-4">
+          <div class="flex w-full grow flex-col items-stretch justify-center gap-1 p-4">
             <p class="text-zinc-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">${title}</p>
-            <p class="text-zinc-600 dark:text-[#9dabb9] text-base font-normal leading-normal pt-1 pb-3">${description}</p>
+            <p class="flex-1 text-zinc-600 dark:text-[#9dabb9] text-base font-normal leading-normal pt-1 pb-3">${description}</p>
             <!-- Chips -->
             <div class="flex gap-2 p-0 flex-wrap pb-3">
               ${technologies.map( t => `
@@ -59,7 +59,7 @@ class ProjectCard extends HTMLElement {
             </div>
           </div>
         </div>
-      </div>
+      </article>
     `;
   }
 }

@@ -22,73 +22,78 @@
     </style>
   </head>
   <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-300 antialiased">
-    <div class="relative flex min-h-screen w-full flex-col items-center justify-center p-4">
-      <!-- Header -->
-      <header class="fixed top-0 z-50 w-full flex justify-center items-center px-4 bg-primary/60 backdrop-blur-sm dark:bg-backgroundDark/80">
-        <nav class="flex justify-evenly w-full px-4">
-          <a href="#home" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Home</a>
-          <a href="#projects" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Projects</a>
-          <a href="#tech-stack" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Tech Stack</a>
-          <a href="#" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Formation</a>
-        </nav>
-      </header>
-      <main class="relative w-full mx-auto px-4 @container">
-        <!-- ProfileHeader -->  
-        <section id="home" class="scroll-m-20 min-h-screen content-center md:px-12">
-          <div class="grid grid-cols-1 gap-6 md:gap-2 md:grid-cols-2 md:px-12">
-            <!-- Avatar -->
-            <div class="order-1 sm:order-2 justify-self-center self-center bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 sm:h-64 border-4 border-white dark:border-gray-700 shadow-lg" data-alt="A professional headshot of a full-stack developer." style='background-image: url("./public/foto-perfil.png");'> 
-            </div>
-            <div class="order-2 sm:order-1 flex gap-8 flex-col items-center">
-              <div class="flex flex-col items-center justify-center text-center gap-2">
-                <!--Title-->
-                <h1 class="text-gray-900 dark:text-white text-3xl font-bold tracking-tight">Hi, I'm Iv&aacute;n San Mart&iacute;n Far&iacute;as</h1>
-                <p class="text-primary text-lg font-medium">Full-Stack Developer</p>
-                <!--Description-->
-                <p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-relaxed max-w-md">
-                  Passionate about building seamless, user-centric web applications with React and Node.js. I thrive on solving complex problems and turning ideas into beautiful, functional products.
-                </p>
-              </div>
-              <div class="flex w-full max-w-sm flex-col @[24rem]:flex-row gap-3">
-                <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-transform hover:scale-105 active:scale-95 flex-1">
-                  <span class="truncate">View My Work</span>
-                </button>
-                <button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white text-base font-bold transition-transform hover:scale-105 active:scale-95 flex-1 ring-1 ring-inset ring-gray-300 dark:ring-gray-700">
-                  <span class="truncate">Download CV</span>
-                </button>
-              </div>
-              <div class="flex justify-center gap-8">
-                <!-- Github -->
-                <a class="flex flex-col items-center gap-2 group" href="https://github.com/ivanJoshua98" target="_blank" rel="noopener noreferrer" >
-                  <div class="flex rounded-full bg-gray-200 dark:bg-gray-800 p-3 group-hover:bg-primary/20 transition-colors">
-                    <svg-icon name="github" class="text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors" style="font-size: 24px;"></svg-icon>
-                  </div>
-                  <p class="text-gray-600 dark:text-gray-400 text-sm font-medium">GitHub</p>
-                </a>
-                <!-- LinkedIn -->
-                <a class="flex flex-col items-center gap-2 group" href="https://www.linkedin.com/in/ivan-san-martin-farias/" target="_blank" rel="noopener noreferrer">
-                  <div class="flex rounded-full bg-gray-200 dark:bg-gray-800 p-3 group-hover:bg-primary/20 transition-colors">
-                    <svg-icon name="linkedin" class="text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors" style="font-size: 24px;"></svg-icon>
-                  </div>
-                  <p class="text-gray-600 dark:text-gray-400 text-sm font-medium">LinkedIn</p>
-                </a>
-                <!-- Gmail -->
-                <a class="flex flex-col items-center gap-2 group" href="mailto:ivan.sanmartin98@gmail.com" target="_blank" rel="noopener noreferrer">
-                  <div class="flex rounded-full bg-gray-200 dark:bg-gray-800 p-3 group-hover:bg-primary/20 transition-colors">
-                    <svg-icon name="gmail" class="text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors" style="font-size: 24px;"></svg-icon>
-                  </div>
-                  <p class="text-gray-600 dark:text-gray-400 text-sm font-medium">Gmail</p>
-                </a>
-              </div>
-            </div>
+    <!-- Header -->
+    <header class="fixed top-0 z-50 w-full flex justify-center items-center px-4 bg-primary/60 backdrop-blur-sm dark:bg-backgroundDark/80">
+      <nav class="flex justify-evenly w-full px-4">
+        <a href="#home" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Home</a>
+        <a href="#projects" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Projects</a>
+        <a href="#tech-stack" class="py-2 px-4 text-white text-sm text-shadow-sm text-nowrap hover:bg-primary">Tech Stack</a>
+        <a href="#" class="py-2 px-4 text-white text-sm text-shadow-sm hover:bg-primary">Formation</a>
+      </nav>
+    </header>
+    <main class="relative mx-8 md:mx-20 mt-[36px]">
+      <!-- ProfileHeader -->  
+      <section id="home" class="scroll-m-20 min-h-screen content-center">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-2 justify-items-center">
+          <!-- Presentation -->
+          <div class="order-2 md:order-1 flex flex-col items-center justify-center text-center gap-2">
+            <!--Title-->
+            <h1 class="text-gray-900 dark:text-white text-3xl font-bold tracking-tight">Hi, I'm Iv&aacute;n San Mart&iacute;n Far&iacute;as</h1>
+            <p class="text-primary text-lg font-medium">Full-Stack Developer</p>
+            <!--Description-->
+            <p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-relaxed max-w-md">
+              Passionate about building seamless, user-centric web applications with React and Node.js. I thrive on solving complex problems and turning ideas into beautiful, functional products.
+            </p>
           </div>
-        </section>
-        <!-- Projects -->
-        <section id="projects" class="scroll-m-20 md:px-12 mb-12">
-          <!-- Headline -->
-          <h1 class="text-zinc-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">
-            Projects
-          </h1>
+          <!-- Avatar -->
+          <div class="order-1 md:order-2 bg-center bg-no-repeat aspect-square bg-cover rounded-full h-32 sm:h-64 border-4 border-white dark:border-gray-700 shadow-lg" data-alt="A professional headshot of a full-stack developer." style='background-image: url("./public/foto-perfil.png");'> 
+          </div>
+          <!-- Actions -->
+          <div class="order-3 w-64 sm:w-96 flex flex-col sm:flex-row items-stretch gap-3 justify-start pt-2 border-t border-black/10 dark:border-white/10">
+            <a href="${codeURL}" class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] gap-2">
+              <span class="material-symbols-outlined">developer_mode_tv</span>
+              <span class="truncate">View My Work</span>
+            </a>
+            <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] gap-2">
+              <span class="material-symbols-outlined">download</span>
+              <span class="truncate">Download CV</span>
+            </button>
+          </div>
+          <!-- Contact -->
+          <div class="order-4 flex justify-center gap-8">
+            <!-- Github -->
+            <a class="flex flex-col items-center gap-2 group" href="https://github.com/ivanJoshua98" target="_blank" rel="noopener noreferrer" >
+              <div class="flex rounded-full bg-gray-200 dark:bg-gray-800 p-3 group-hover:bg-primary/20 transition-colors">
+                <svg-icon name="github" class="text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors" style="font-size: 24px;"></svg-icon>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 text-sm font-medium">GitHub</p>
+            </a>
+            <!-- LinkedIn -->
+            <a class="flex flex-col items-center gap-2 group" href="https://www.linkedin.com/in/ivan-san-martin-farias/" target="_blank" rel="noopener noreferrer">
+              <div class="flex rounded-full bg-gray-200 dark:bg-gray-800 p-3 group-hover:bg-primary/20 transition-colors">
+                <svg-icon name="linkedin" class="text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors" style="font-size: 24px;"></svg-icon>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 text-sm font-medium">LinkedIn</p>
+            </a>
+            <!-- Gmail -->
+            <a class="flex flex-col items-center gap-2 group" href="mailto:ivan.sanmartin98@gmail.com" target="_blank" rel="noopener noreferrer">
+              <div class="flex rounded-full bg-gray-200 dark:bg-gray-800 p-3 group-hover:bg-primary/20 transition-colors">
+                <svg-icon name="gmail" class="text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors" style="font-size: 24px;"></svg-icon>
+              </div>
+              <p class="text-gray-600 dark:text-gray-400 text-sm font-medium">Gmail</p>
+            </a>
+          </div> 
+        </div>
+      </section>
+      <!-- Projects -->
+      <section id="projects" class="scroll-m-20 mb-12">
+        <!-- Headline -->
+        <header class="border-t border-black/10 dark:border-white/10">
+           <h1 class="text-zinc-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">
+             Projects
+           </h1>
+        </header>
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
           <!-- Project Card 1: E-commerce Platform -->
           <project-card 
             image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuAQARI2U_kyGXwmwp_OhVeJe-g3wpD_I7LU9BbqXra96ODPBuO4NA7-kG7_rWIZtRq6K_5JTU8mzh-H3H8ZSqWcMhdn0IDzgy7NJXtE9Kg71JvZygZW2czkASI-GHlARlPw8NavcgFZWQvnwjdQ_GFTesCZJKGbsb-pAZEvzfWqcqENEUdTXnoMUmnkoJa0TbSbFAuvy1zu5KfLmqR088cerp110XDAiB4123CNXM0eAVQAmYiLGufSnw2OmVeOYpPVu9sDSXV5S7E"
@@ -97,7 +102,8 @@
             description="A full-featured e-commerce platform with a robust cart, secure checkout, and a comprehensive admin panel for inventory management."
             technologies='["react", "nodejs"]'
             code-url="#"
-          />
+            class="min-h-full"
+          ></project-card>
           <!-- Project Card 2: Data Dashboard -->
           <project-card 
             image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuAXytkuhhb8ICcolEoq4jKjd7YhTwoUk7j5MuZKb74g1h2jFbzHcWxHEtd-3sz8hDUXOg5I703mHBv4E2daGPX99JDLLGo9_vyjC6aXmxqcjcCrw1GxwjeXL-Mrwcs_7wgLWT9RlIUG0aAadpV1STx1pOjhNydyyVyy4LlcWwUjqQ93lvkUSZq2dL579vws5HFSngAnesgLI5jN94yxAF1DU96RhgjZBhTiiDcQiFDeIJG9a_csrMT7uNLu7ciaycR-q2GOZVI56ak"
@@ -106,7 +112,7 @@
             description="An interactive dashboard that provides key business insights by visualizing complex data sources in real-time."
             technologies='["java","springboot", "swagger"]'
             code-url="#"
-          />
+          ></project-card>
           <!-- Project Card 3: Task Manager -->
           <project-card 
             image-url="https://lh3.googleusercontent.com/aida-public/AB6AXuB_sWepdwODo1MEfBnDxZ4hyAh-VZTEEvGfkA_gARri0t_KOwqTH5rDVq_cAOpX5jrrOIXoPN5AsOlZi2OxXdWQSAflxfB8Zl0D0YpuOUpfkbZr_xn8UmJ1tXeFr2CS-luFzlUbIM96LJUp89jwq8sjOeFv83UvA90IZd_GhgxI2W18xwgBiUmEJeTXvHvqWYNY-j6qlVwmf47oOvhG9MN51Xz2oiQ1K5jjCp_iWqAIvCIuo11DGQRnySpTKGJ_b7dcZeKm1-EQFYo"
@@ -115,79 +121,74 @@
             description="A cross-platform app for task management with user authentication, real-time data sync, and push notifications."
             technologies='["html", "css", "tailwind"]'
             code-url="#"
-          />
-        </section>
-        <!-- Tech Stack -->
-        <section id="tech-stack" class="scroll-m-20 md:px-12 mt-12">
-          <!-- Headline -->
-          <header>
-            <h1 class="text-zinc-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">
-              Tech Stack
-            </h1>
-          </header>
-          <main class="px-4 py-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-            <!-- Languages Section -->
-            <section class="bg-white/5 dark:bg-white/5 rounded-xl p-4">
-              <h2 class="text-center text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-tight">
-                Languages & Systems
-              </h2>
-              <article class="py-4 space-y-2">
-                <!-- List items -->
-                <div class="min-h-[72px] grid grid-cols-3 gap-5 pt-4">
-                  <tech-item name="java" size="32"></tech-item>
-                  <tech-item name="nodejs" size="32"></tech-item>
-                  <tech-item name="javascript" size="32"></tech-item>
-                  <tech-item name="typescript" size="32"></tech-item>
-                  <tech-item name="html" size="32"></tech-item>
-                  <tech-item name="css" size="32"></tech-item>
-                  <tech-item name="postgres" size="32"></tech-item>
-                  <tech-item name="mysql" size="32"></tech-item>
-                  <tech-item name="haskell" size="32"></tech-item>
-                </div>
-              </article>
-            </section>
-            <!-- Frameworks Section -->
-            <section class="bg-white/5 dark:bg-white/5 rounded-xl p-4 mt-8 md:mt-0">
-              <h2 class="text-center text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-tight">
-                Frameworks & Libraries
-              </h2>
-              <article class="py-4 space-y-2">
-                <!-- List items -->
-                <div class="min-h-[72px] grid grid-cols-3 gap-5 pt-4">
-                  <tech-item name="tailwind" size="32"></tech-item>
-                  <tech-item name="react" size="32"></tech-item>
-                  <tech-item name="nextjs" size="32"></tech-item>
-                  <tech-item name="springboot" size="32"></tech-item>
-                  <tech-item name="expressjs" size="32"></tech-item>
-                  <tech-item name="googleappsscript" size="32"></tech-item>
-                  <tech-item name="mui" size="32"></tech-item>
-                </div>
-              </article>
-            </section>
-            <!-- DevOps Section -->
-            <section class="bg-white/5 dark:bg-white/5 rounded-xl p-4 mt-8 md:mt-0">
-              <h2 class="text-center text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-tight">
-                DevOps & Tools
-              </h2>
-              <article class="py-4 space-y-2">
-                <!-- List items -->
-                <div class="min-h-[72px] grid grid-cols-3 gap-5 pt-4">
-                  <tech-item name="git" size="32"></tech-item>
-                  <tech-item name="github" size="32"></tech-item>
-                  <tech-item name="githubactions" size="32"></tech-item>
-                  <tech-item name="swagger" size="32"></tech-item>
-                  <tech-item name="gradle" size="32"></tech-item>
-                  <tech-item name="maven" size="32"></tech-item>
-                  <tech-item name="npm" size="32"></tech-item>
-                  <tech-item name="pnpm" size="32"></tech-item>
-                  <tech-item name="docker" size="32"></tech-item>
-                  <tech-item name="jwt" size="32"></tech-item>
-                </div>
-              </article>
-            </section>
-          </main>
-        </section>
-      </main>
-    </div>
+            class="min-h-full"
+          ></project-card>
+        </main>
+      </section>
+      <!-- Tech Stack -->
+      <section id="tech-stack" class="scroll-m-20 mt-12">
+        <!-- Headline -->
+        <header class="border-t border-black/10 dark:border-white/10">
+          <h1 class="text-zinc-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6">
+            Tech Stack
+          </h1>
+        </header>
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4">
+          <!-- Languages  -->
+          <article class="bg-white/5 dark:bg-white/5 rounded-xl h-full p-4">
+            <h2 class="text-center text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-tight mb-4">
+              Languages & Platforms
+            </h2>
+            <!-- List items --> 
+            <div class="min-h-[72px] grid grid-cols-3 gap-4 py-4 space-y-2">
+              <tech-item name="java" size="32"></tech-item>
+                <tech-item name="nodejs" size="32"></tech-item>
+                <tech-item name="javascript" size="32"></tech-item>
+                <tech-item name="typescript" size="32"></tech-item>
+                <tech-item name="html" size="32"></tech-item>
+                <tech-item name="css" size="32"></tech-item>
+                <tech-item name="postgres" size="32"></tech-item>
+                <tech-item name="mysql" size="32"></tech-item>
+                <tech-item name="haskell" size="32"></tech-item>
+            </div>
+          </article>
+          <!-- Frameworks -->
+          <article class="bg-white/5 dark:bg-white/5 rounded-xl h-full p-4">
+            <h2 class="text-center text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-tight mb-4">
+              Frameworks & Libraries
+            </h2>
+            <!-- List items -->
+            <div class="min-h-[72px] grid grid-cols-3 gap-4 py-4 space-y-2">
+              <tech-item name="tailwind" size="32"></tech-item>
+              <tech-item name="react" size="32"></tech-item>
+              <tech-item name="nextjs" size="32"></tech-item>
+              <tech-item name="springboot" size="32"></tech-item>
+              <tech-item name="expressjs" size="32"></tech-item>
+              <tech-item name="mui" size="32"></tech-item>
+              <tech-item name="googleappsscript" size="32"></tech-item>
+            </div>
+          </article>
+          <!-- DevOps -->
+          <article class="bg-white/5 dark:bg-white/5 rounded-xl h-full p-4">
+            <h2 class="text-center text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-tight mb-4">
+              DevOps & Tools
+            </h2>
+            <!-- List items -->
+            <div class="min-h-[72px] grid grid-cols-3 gap-4 py-4 space-y-2">
+              <tech-item name="git" size="32"></tech-item>
+              <tech-item name="github" size="32"></tech-item>
+              <tech-item name="githubactions" size="32"></tech-item>
+              <tech-item name="swagger" size="32"></tech-item>
+              <tech-item name="gradle" size="32"></tech-item>
+              <tech-item name="maven" size="32"></tech-item>
+              <tech-item name="npm" size="32"></tech-item>
+              <tech-item name="pnpm" size="32"></tech-item>
+              <tech-item name="docker" size="32"></tech-item>
+              <tech-item name="jwt" size="32"></tech-item>
+            </div>
+          </article>
+        </main>
+      </section>
+    </main>
   </body>
 </html>
