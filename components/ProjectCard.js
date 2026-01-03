@@ -40,19 +40,15 @@ class ProjectCard extends HTMLElement {
             <!-- Chips -->
             <div class="flex gap-2 p-0 flex-wrap pb-3">
               ${technologies.map( t => `
-                  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-[#283039] px-3">
-                    <svg-icon name="${t}" class="text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors" style="font-size: 24px;"></svg-icon>
-                    <p class="text-primary dark:text-white text-sm font-medium leading-normal">${techNames[t]}</p>
+                  <div class="flex pt-px pb-px shrink-0 items-center justify-center gap-x-2 rounded bg-primary/20 dark:bg-[#283039] px-2">
+                    <svg-icon name="${t}" size="16"></svg-icon>
+                    <p class="text-primary dark:text-white text-xs leading-normal">${techNames[t]}</p>
                   </div>`
               ).join('')}
             </div>
             <!-- Action Buttons -->
             <div class="flex flex-col sm:flex-row items-stretch gap-3 justify-start pt-2 border-t border-black/10 dark:border-white/10">
-              <a href="${codeURL}" class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] gap-2">
-                <span class="material-symbols-outlined">open_in_new</span>
-                <span class="truncate">View Live Demo</span>
-              </a>
-              <a href="${codeURL}" class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-transparent text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em]">
+              <a href="${codeURL}" target="_blank" rel="noopener noreferrer" class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-2 bg-transparent text-zinc-900 dark:text-white hover:bg-primary transition-colors border border-zinc-300 dark:border-zinc-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em]">
                 <span class="material-symbols-outlined">code</span>
                 <span class="truncate">Source Code</span>
               </a>

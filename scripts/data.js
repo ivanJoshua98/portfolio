@@ -28,4 +28,8 @@ const techNames = {
   pnpm: 'pnpm',
   docker: 'Docker',
   jwt: 'JWT',
+  cypress: 'Cypress',
+  grafana: 'Grafana',
+  prometheus: 'Prometheus',
+  k6: 'K6',
 }
