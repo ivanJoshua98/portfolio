@@ -47,9 +47,9 @@ class ProjectCard extends HTMLElement {
               ).join('')}
             </div>
             <!-- Action Buttons -->
-            <div class="flex flex-col sm:flex-row items-stretch gap-3 justify-start pt-2 border-t border-black/10 dark:border-white/10">
+            <div class="flex flex-col sm:flex-row items-stretch gap-3 justify-center pt-2 border-t border-black/10 dark:border-white/10">
               <a href="${codeURL}" target="_blank" rel="noopener noreferrer" class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-2 bg-transparent text-zinc-900 dark:text-white hover:bg-primary transition-colors border border-zinc-300 dark:border-zinc-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em]">
-                <span class="material-symbols-outlined">code</span>
+                <svg-icon name="code"></svg-icon>
                 <span class="truncate">Source Code</span>
               </a>
             </div>
