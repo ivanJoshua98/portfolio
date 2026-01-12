@@ -31,7 +31,7 @@
         activeLink.classList.add('underline', 'underline-4px');
       }
     }, {
-      threshold: 0.3
+      threshold: 0.25
     });
     sections.forEach(section => observer.observe(section));
   });      
