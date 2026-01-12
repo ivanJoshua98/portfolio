@@ -31,7 +31,7 @@ class ProjectCard extends HTMLElement {
 
     this.innerHTML = `
       <article class="h-full">
-        <div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg h-full bg-white dark:bg-[#1C2127]">
+        <div class="flex flex-col items-stretch justify-start rounded-xl overflow-hidden shadow-lg h-full bg-gray-200 dark:bg-[#1C2127]">
           <div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="${dataAlt}" style='background-image: url("${imageURL}");'>
           </div>
           <div class="flex w-full grow flex-col items-stretch justify-center gap-1 p-4">
@@ -40,15 +40,15 @@ class ProjectCard extends HTMLElement {
             <!-- Chips -->
             <div class="flex gap-2 p-0 flex-wrap pb-3">
               ${technologies.map( t => `
-                  <div class="flex pt-px pb-px shrink-0 items-center justify-center gap-x-2 rounded bg-primary/20 dark:bg-[#283039] px-2">
+                  <div class="flex pt-px pb-px shrink-0 items-center justify-center gap-x-2 rounded bg-gray-300 dark:bg-[#283039] px-2">
                     <svg-icon name="${t}" size="16"></svg-icon>
-                    <p class="text-primary dark:text-white text-xs leading-normal">${techNames[t]}</p>
+                    <p class="text-gray-800 dark:text-white text-xs leading-normal">${techNames[t]}</p>
                   </div>`
               ).join('')}
             </div>
             <!-- Action Buttons -->
             <div class="flex flex-col sm:flex-row items-stretch gap-3 justify-center pt-2 border-t border-black/10 dark:border-white/10">
-              <a href="${codeURL}" target="_blank" rel="noopener noreferrer" class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-2 bg-transparent text-zinc-900 dark:text-white hover:bg-primary transition-colors border border-zinc-300 dark:border-zinc-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em]">
+              <a href="${codeURL}" target="_blank" rel="noopener noreferrer" class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-2 bg-transparent text-zinc-900 hover:text-white dark:text-white hover:bg-primary transition-colors border border-zinc-300 dark:border-zinc-700 gap-2 text-sm font-bold leading-normal tracking-[0.015em]">
                 <svg-icon name="code"></svg-icon>
                 <span class="truncate">Source Code</span>
               </a>
